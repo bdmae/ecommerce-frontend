@@ -7,10 +7,7 @@ import { Gallery } from '../styles/Gallery';
 export default function Home() {
   const [results] = useQuery({ query: PRODUCT_QUERY });
   const {data, fetching, error} = results;
-  console.log({data});
   const products = data?.products.data;
-
-  console.log({products}, "got the products");
 
 
   if (fetching) return <p>LOADING</p>;

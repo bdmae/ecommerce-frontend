@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { ProductStyle } from "../styles/ProductStyle";
 
 export default function Product({ product }) {
 
@@ -8,14 +8,14 @@ export default function Product({ product }) {
   console.log({product}, "main product");
   console.log("inside product", {image});
   return (
-    <div>
-    <h1>hello there</h1>
-      <div>
-        <img src={image.data.attributes.formats?.small?.url} alt="" />
-      </div>
-      <h2>title</h2>
-      <h3>price</h3>
-    </div>
+    <ProductStyle>
+        <h1>hello there</h1>
+        <div>
+          <img src={image.data.attributes.formats?.small?.url} alt="" />
+        </div>
+        <h2>title</h2>
+        <h3>price</h3>
+    </ProductStyle>
   );
 }
 
