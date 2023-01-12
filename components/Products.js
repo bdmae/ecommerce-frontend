@@ -9,7 +9,6 @@ export default function Product({ product }) {
   console.log("inside product", {image});
   return (
     <ProductStyle>
-        <h1>hello there</h1>
         <div>
           <img src={image.data.attributes.formats?.small?.url} alt="" />
         </div>
@@ -18,4 +17,5 @@ export default function Product({ product }) {
     </ProductStyle>
   );
 }
+
 

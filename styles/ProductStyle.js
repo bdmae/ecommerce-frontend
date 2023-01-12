@@ -13,4 +13,7 @@ export const ProductStyle = styled.div`
     height: 20rem;
     object-fit: cover;
   }
+  h2 {
+    padding: 0.5rem;
+  }
 `;
