@@ -16,6 +16,7 @@ body {
   background: #f1f1f1;
   --primary: #2d2d2d;
   --secondary: #535353;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
 h3 {
@@ -32,7 +33,7 @@ p {
   line-height: 150%;
 }
 
-body {
+/* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -40,7 +41,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
+} */
 
 
 a {

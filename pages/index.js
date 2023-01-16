@@ -3,6 +3,7 @@ import { useQuery } from 'urql'
 import { PRODUCT_QUERY } from '../lib/query'
 import Product from '../components/Products';
 import { Gallery } from '../styles/Gallery';
+import Nav from '../components/Nav';
 
 export default function Home() {
   const [results] = useQuery({ query: PRODUCT_QUERY });
@@ -23,7 +24,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1>hello</h1>
+        <Nav></Nav>
         <Gallery>
           {products?.map((product) => (
             <Product key={products.attributes?.slug} product={product} />

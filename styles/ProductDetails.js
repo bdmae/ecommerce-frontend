@@ -50,4 +50,7 @@ export const Buy = styled.div`
     background: var(--primary);
     color:white;
     font-weight:500;
+    padding:1rem;
+    display: flex;
+    justify-content: center;
 `;

@@ -2,7 +2,7 @@ import { useQuery } from "urql";
 import { GET_PRODUCT_QUERY } from "../../lib/query";
 import { useRouter } from "next/router";
 import { ProductDetailsStyle, ProductInfo, Quantity } from "../../styles/ProductDetails";
-
+import { Buy } from "../../styles/ProductDetails";
 
 export default function ProductDetails() {
   //example slug - cable-knit-jumper
@@ -27,7 +27,7 @@ export default function ProductDetails() {
 
   return(
     <ProductDetailsStyle>
-    <img src={image.data.attributes.formats.medium.url} alt={title} />
+    <img src={image.data.attributes.formats.small?.url} alt={title} />
     <ProductInfo>
     <div>
       <h3>title</h3>
@@ -41,7 +41,6 @@ export default function ProductDetails() {
     </div>
     <Buy>add to cart</Buy>
     </ProductInfo>
-
     </ProductDetailsStyle>
   )
 }
